@@ -1,5 +1,3 @@
-import { } from 'puppeteer-core';
-
 describe('Unit tests: Adding and removing lists', () => {
   it('Should add a list', () => {
     expect(true).toBe(false);
@@ -20,12 +18,6 @@ describe('Unit tests: Adding and removing lists', () => {
     expect(true).toBe(false);
   });
   it('Should clear persisted list items', () => {
-    expect(true).toBe(false);
-  });
-});
-
-describe('Acceptance tests', () => {
-  it('Should exist', () => {
     expect(true).toBe(false);
   });
 });
