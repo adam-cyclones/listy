@@ -1,5 +1,4 @@
 export function media(qs, cb) {
-  console.log(qs)
 	if (cb) {
 		const q = window.matchMedia(`screen and (${qs})`);
 		const matches = () => {
