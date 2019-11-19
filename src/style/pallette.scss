@@ -1,0 +1,59 @@
+:root {
+	// Shades
+	// Black
+	--color-black-dark-L: 15%;
+	--color-black-base-H: 30;
+	--color-black-base-S: 4%;
+	--color-black-base-L: 19%;
+	--color-black-light-L: 30%;
+	// White
+	--color-white-base-H: 30;
+	--color-white-base-S: 4%;
+	--color-white-base-L: 81%;
+	--color-white-light-L: 90%;
+	// Slate Grey
+	--color-slate-grey-base-H: 178;
+	--color-slate-grey-base-S: 11%;
+	--color-slate-grey-base-L: 45%;
+	// Dark Khaki 
+	--color-dark-khaki-base-H: 34;
+	--color-dark-khaki-base-S: 47%;
+	--color-dark-khaki-base-L: 61%;
+
+	// Composites
+	--color-black-light: hsl(
+		var(--color-black-base-H),
+		var(--color-black-base-S),
+		var(--color-black-light-L)
+	);
+	--color-black-base: hsl(
+		var(--color-black-base-H),
+		var(--color-black-base-S),
+		var(--color-black-base-L)
+	);
+	--color-black-dark: hsl(
+		var(--color-black-base-H),
+		var(--color-black-base-S),
+		var(--color-black-dark-L)
+	);
+	--color-white-base: hsl(
+		var(--color-white-base-H),
+		var(--color-white-base-S),
+		var(--color-white-base-L)
+	);
+	--color-white-light: hsl(
+		var(--color-white-base-H),
+		var(--color-white-base-S),
+		var(--color-white-light-L)
+	);
+	--color-slate-grey-base: hsl(
+		var(--color-slate-grey-base-H),
+		var(--color-slate-grey-base-S),
+		var(--color-slate-grey-base-L)
+	);
+	--color-dark-khaki-base: hsl(
+		var(--color-dark-khaki-base-H),
+		var(--color-dark-khaki-base-S),
+		var(--color-dark-khaki-base-L)
+	);
+}

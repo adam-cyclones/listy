@@ -1,0 +1,46 @@
+@import '../fonts/Fonts.scss';
+@import './variables.scss';
+@import './pallette.scss';
+
+:root {
+  --tablet: #{$tablet};
+  --desktop: #{$desktop};
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Raleway', sans-serif;
+  background-color: #fff;
+  margin: 0;
+  // no scroll
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.app-SectionPadding {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 4rem;
+}
+
+h1 {
+  font-size: 3.125rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Questrial', sans-serif;
+  color: $pallette-brown-black;
+}
+
