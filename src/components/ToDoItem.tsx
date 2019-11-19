@@ -5,9 +5,12 @@ export default {
   },
   render() {
     return (
-      <div class='tdl-Item'>
-
-      </div>
+      <li class='tdl-Item'>
+        <p>DATE CRETEAD</p>
+        <p>PRIORITY</p>
+        <button type='button' class='tdl-Item_Delete'>Delete</button>
+        <textarea>SOME VALUE</textarea>
+      </li>
     );
   }
 }
