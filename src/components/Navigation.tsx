@@ -1,23 +1,22 @@
-import "./Navigation.scss";
-import store from '../store';
-import { mapGetters } from "vuex";
+import './Navigation.scss';
+// Components
+import AddListButton from './AddListButton';
 
 export default {
-  store,
   name: 'Navigation',
   data() {
     return {
-      homeUrl: '/home'
+      appName: 'Listy'
     }
   },
   render() {
     return (
-      <header class='nav'>
-        <h1 class='nav-Header'>{this.getAppName}</h1>
-      </header>
+      <div class='nav'>
+        <header class='nav-Header'>
+          <h1 class='nav-Brand'>{this.appName}</h1>
+          <AddListButton></AddListButton>
+        </header>
+      </div>
     );
-  },
-  computed: {
-    ...mapGetters('contentModule', ['getAppName']),
   }
 }
