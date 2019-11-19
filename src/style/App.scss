@@ -1,5 +1,4 @@
 @import '../fonts/Fonts.scss';
-@import './variables.scss';
 @import './pallette.scss';
 
 html,
@@ -30,5 +29,5 @@ h4,
 h5,
 h6 {
   font-family: 'Questrial', sans-serif;
-  color: $pallette-brown-black;
+  color: var(--color-black-dark);
 }
