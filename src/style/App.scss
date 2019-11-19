@@ -2,11 +2,6 @@
 @import './variables.scss';
 @import './pallette.scss';
 
-:root {
-  --tablet: #{$tablet};
-  --desktop: #{$desktop};
-}
-
 html,
 body {
   min-height: 100vh;
@@ -24,12 +19,6 @@ body {
   right: 0;
 }
 
-.app-SectionPadding {
-  max-width: 80rem;
-  margin: 0 auto;
-  padding: 0 4rem;
-}
-
 h1 {
   font-size: 3.125rem;
 }
@@ -43,4 +32,3 @@ h6 {
   font-family: 'Questrial', sans-serif;
   color: $pallette-brown-black;
 }
-

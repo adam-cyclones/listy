@@ -1,14 +1,13 @@
-export type Priority =
-  'life changing' |
-  'important' |
-  'meh';
+import { Priority } from './types';
 
 export interface Item {
   body: string;
-  date: string;
+  date: {
+    created: string
+  };
   id: number;
   index: number;
-  priority: Priority
+  priority: number
 }
 
 export interface List {
