@@ -1,14 +1,13 @@
 import ToDoList from '../components/ToDoList';
 
 export default {
-  name: 'BasicPage',
+  name: 'BasicView',
+  inject: ['getLists'],
   render() {
     return (
-      <div class='app-View'>
-        <main class='app-Main'>
-          <ToDoList></ToDoList>
-        </main>
-      </div>
+      <main class='app-Main'>
+        {this.getLists().map(list => (<ToDoList list={list}></ToDoList>))}
+      </main>
     );
-  },
+  }
 };
