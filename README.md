@@ -7,9 +7,9 @@
   <p align="center">
     A Hybrid mobile PWA TODO list
   </p>
+  
+  <img alt='listy app screenshot' src='https://thepracticaldev.s3.amazonaws.com/i/o9mkvyimohalz8z11o1h.png'/>
 </p>
-
-
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
