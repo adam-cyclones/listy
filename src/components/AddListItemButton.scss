@@ -1,0 +1,14 @@
+@import '../style/pallette.scss';
+
+.btn {
+  &-AddListItem {
+    background: $light-0;
+    padding: 1.6rem;
+    border: 0;
+    width: 100%;
+    color: $light-100;
+    font-size: 1rem;
+    font-weight: 100;
+    text-transform: capitalize;
+  }
+}
