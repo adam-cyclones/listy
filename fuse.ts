@@ -1,14 +1,10 @@
-require('dotenv').config();
-
 import {
-  EnvPlugin,
   Babel7Plugin,
   CSSPlugin,
   FuseBox,
   SassPlugin,
   WebIndexPlugin,
-  UglifyESPlugin,
-  CopyPlugin
+  UglifyESPlugin
 } from "fuse-box";
 
 const prod = false;
@@ -74,12 +70,6 @@ fuse
   .bundle('app.js')
   .instructions('!> App.tsx')
   .sourceMaps(true)
-  .plugin(CopyPlugin({
-    files: ['**/*.webp']
-  }))
-  .plugin(EnvPlugin({
-    LAMBDA_GITHUB: process.env.LAMBDA_GITHUB
-  }))
   .watch()
   .hmr();
 
