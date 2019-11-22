@@ -1,10 +1,8 @@
-import { Priority } from '../types/types';
-
-const p = new Map<number, Priority>();
-p.set(1, 'meh');
-p.set(2, 'important');
-p.set(3, 'life changing');
+const p = new Map();
+p.set(1, "Life Changing");
+p.set(2, "Important");
+p.set(3, "Meh");
 
 export function getPriorityName(level: 1 | 2 | 3) {
-  return p.get(level)
+  return p.get(level);
 }

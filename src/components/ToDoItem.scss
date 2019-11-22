@@ -1,0 +1,36 @@
+@import '../style/pallette.scss';
+
+.tdl {
+  &-ToDo {
+    flex: 1;
+    border: 0;
+    border-bottom: $light-90 solid 1px;
+    padding: .8em .4em;
+  }
+
+  &-ToDoWrapper {
+    display: flex;
+  }
+
+  &-Item {
+    border-radius: 2px;
+    border: $light-90 1px solid;
+    margin-bottom: .5rem;
+    padding: 1em .7rem 0.5rem;
+  }
+
+  &-Priority {
+    display: flex;
+    margin-top: 1em;
+    border-radius: 9e9em;
+    border: 1px $light-90 solid;
+  }
+
+  &-PrioritySelectList {
+    flex: 1;
+  }
+
+  &-PrioritySymbol {
+    margin-left: .6em;
+  }
+}

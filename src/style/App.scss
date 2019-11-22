@@ -1,21 +1,48 @@
 @import '../fonts/Fonts.scss';
 @import './pallette.scss';
 
+// For demo
+@media screen and (min-width: 768px) {
+  body {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  html:after {
+    content: "👋 This app has been designed to target mobile phones as a hybrid PWA, please open dev tools and 'Toggle device toolbar'.";
+    line-height: 1.2;
+    display: block;
+    width: 100%;
+    font-family: 'Questrial', sans-serif;
+    margin: auto;
+    position: absolute;
+    height: 1.6em;
+    padding: 20px;
+    border-radius: 9999em;
+    font-size: 1.6em;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    padding: 25%;
+    box-sizing: border-box;
+  }
+}
+// End demo
+
 html,
 body {
   min-height: 100vh;
 }
 
 body {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background: $light-100;
   font-family: 'Raleway', sans-serif;
-  background-color: #fff;
-  margin: 0;
-  // no scroll
-  position: absolute;
-  top: 0;
   left: 0;
+  margin: 0;
+  position: absolute;
   right: 0;
+  top: 0;
 }
 
 h1 {
@@ -28,6 +55,38 @@ h3,
 h4,
 h5,
 h6 {
+  color: $light-0;
   font-family: 'Questrial', sans-serif;
-  color: var(--color-black-dark);
+}
+
+// Globals
+.app {
+  &-Root {
+    min-height: 100vh;
+  }
+
+  &-Main {
+    flex: 1;
+    max-height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+  }
+
+  &-Root {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-BtnGeneric {
+    margin-right: .8rem;
+    background-color: transparent;
+    border-radius: 9e9em;
+    border: 1px solid $light-90;
+    color: $light-10;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    padding: 0.3em 1.2em;
+    text-align: center;
+    text-transform: capitalize;
+  }
 }

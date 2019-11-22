@@ -1,5 +1,4 @@
 import './Navigation.scss';
-// Components
 import AddListButton from './AddListButton';
 
 export default {

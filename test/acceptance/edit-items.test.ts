@@ -16,19 +16,32 @@ const iPhone = puppeteer.devices['iPhone 6'];
   }
 })();
 
-// This application is intended to target mobile devices only
-describe('Add to do item', () => {
+// allow up to 30 secs per test
+jest.setTimeout(30000);
 
-  it('Should exist', async () => {
+// This application is intended to target mobile devices only
+describe('Edit items', () => {
+
+  it('Should have initial item on load', async () => {
     // Arrange
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
+    const newValue = 'China';
     // Act
     await page.emulate(iPhone);
     await page.goto(url);
-    const el = await page.evaluate(() => document.querySelector('body'));
+    await page.focus(`[data-test='todo-item']`);
+    await page.keyboard.type('China');
+    await page.keyboard.press('Tab', {
+      delay: 100
+    });
+    await page.reload({ waitUntil: ["networkidle0", "domcontentloaded"] });
+    const persistedToDoValue = await page.evaluate(() => {
+      const selectPriority = document.querySelector(`[data-test='todo-item']`);
+      return selectPriority.value;
+    });
     await browser.close();
     // Assert
-    await expect(el).toBeTruthy();
+    await expect(persistedToDoValue).toBe(newValue);
   });
 });

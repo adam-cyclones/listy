@@ -1,0 +1,64 @@
+@import '../style/common-sizes.scss';
+@import '../style/pallette.scss';
+
+.tdl {
+  background: $light-100;
+  flex: 1;
+  min-height: calc(100vh - 3.5rem);
+  padding-top: 57px;
+  position: relative;
+  position: sticky;
+  scroll-snap-align: start;
+  top: 0;
+  width: 100%;
+
+  &-ListTitle {
+    background: transparent;
+    border: 0;
+    color: $light-0;
+    display: block;
+    flex: 1;
+    font-family: 'Questrial', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 3.5rem;
+  }
+
+  &-ListHeader {
+    display: flex;
+    padding: 0 1em;
+  }
+
+  &-ListFooter {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+  }
+
+  &-List {
+    height: calc(100vh - (#{$bar-size} * 3) - 3em);
+    list-style: none;
+    overflow: scroll;
+    padding: 0;
+    position: relative;
+
+    &:empty:before {
+      bottom: 0;
+      color: $light-80;
+      content: 'Nothing to do, yay!';
+      font-weight: bold;
+      height: 1em;
+      margin: auto;
+      position: absolute;
+      text-align: center;
+      top: 0;
+      white-space: nowrap;
+      width: 100%;
+    }
+  }
+
+  &-ListWrapper {
+    padding: 0 1rem;
+  }
+}

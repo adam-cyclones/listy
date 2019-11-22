@@ -1,16 +1,13 @@
-import { Priority } from './types';
+import { PriorityN } from "./types";
 
 export interface Item {
   body: string;
-  date: {
-    created: string
-  };
   id: number;
-  index: number;
-  priority: number
+  priority: PriorityN;
 }
 
 export interface List {
+  id: number;
   title: string;
   items: Item[];
 }
