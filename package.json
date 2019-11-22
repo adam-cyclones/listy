@@ -6,6 +6,7 @@
 	"scripts": {
 		"serve": "npx ts-node fuse",
 		"test": "jest ./test/unit",
+		"lint": "npx tslint -c tslint.json 'src/**/*.ts'",
 		"test-acceptance": "jest ./test/acceptance"
 	},
 	"devDependencies": {
@@ -14,7 +15,8 @@
 		"@babel/plugin-transform-runtime": "^7.6.2",
 		"@babel/preset-env": "^7.0.0",
 		"@babel/runtime": "^7.6.3",
-		"@types/node": "^12.7.5",
+		"@types/jest": "^24.0.23",
+		"@types/node": "^12.12.11",
 		"babel-core": "^7.0.0-bridge.0",
 		"babel-helper-vue-jsx-merge-props": "^2.0.3",
 		"babel-jest": "^25.0.0",
@@ -26,21 +28,18 @@
 		"node-sass": "^4.12.0",
 		"postcss-modules": "^1.4.1",
 		"puppeteer": "^2.0.0",
+		"ts-jest": "^24.2.0",
 		"ts-node": "8.4.1",
+		"tslint": "^5.20.1",
 		"typescript": "3.4.3",
 		"uglify-es": "^3.3.9",
 		"vue-tsx-support": "^2.3.2",
 		"ws": ">=3.3.1"
 	},
 	"dependencies": {
-		"apollo-boost": "^0.4.4",
-		"dotenv": "^8.1.0",
-		"graphql": "^14.5.7",
-		"html2canvas": "^1.0.0-rc.5",
+		"npm": "^6.13.1",
+		"sillyname": "^0.1.0",
 		"vue": "2.6.10",
-		"vue-apollo": "^3.0.0-rc.6",
-		"vue-async-computed": "^3.7.0",
-		"vue-custom-element": "^3.2.9",
 		"vuex": "^3.1.2"
 	}
 }
